@@ -40,7 +40,7 @@ function getWinner(player, computer) {
         return 'computer';
     }
 }
-
+ 
 function displayResult(player, computer, winner) {
     if (winner === 'draw') {
         resultMessage.textContent = `Empate! Ambos escolheram ${player}`;
