@@ -1,4 +1,6 @@
-﻿
+﻿[Game - Click here](https://thiagotorresferrao.github.io/Pedra-Papel-Tesoura-Lagarto-Spock/)
+
+
 EN
 
 This code creates a "Rock, Paper, Scissors, Lizard, Spock" game based on the TV series The Big Bang Theory, which aired from 2007 to 2019.
@@ -48,6 +50,7 @@ As regras de Pedra-papel-tesoura-lagarto-Spock são:
 Desenvolvido por Thiago Torres.
 
 ![demo](img/demo01.jpg)
+
 ![demo](img/demo02.png)
 
 [Linkedin](https://www.linkedin.com/in/thiago-f-torres/)
