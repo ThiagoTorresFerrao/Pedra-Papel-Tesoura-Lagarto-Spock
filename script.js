@@ -46,11 +46,11 @@ function displayResult(player, computer, winner) {
     const computerImg = document.getElementById('computer-choice-img');
 
     // Define imagens
-    playerImg.src = `img${player}.png`;
+    playerImg.src = `img/img${player}.png`;
     playerImg.alt = player;
     playerImg.style.display = 'inline';
 
-    computerImg.src = `img${computer}.png`;
+    computerImg.src = `img/img${computer}.png`;
     computerImg.alt = computer;
     computerImg.style.display = 'inline';
 
@@ -90,6 +90,3 @@ function updateScore(winner) {
 function capitalize(word) {
     return word.charAt(0).toUpperCase() + word.slice(1);
 }
-
-
-// Thiago Torres

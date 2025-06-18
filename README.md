@@ -47,4 +47,5 @@ As regras de Pedra-papel-tesoura-lagarto-Spock são:
 
 Desenvolvido por Thiago Torres.
 
-![demo](https://raw.githubusercontent.com/ThiagoTorresFerrao/pedra_papel_tesoura_lagarto_spock/86374deed8ba52e97a8ac1addeb988e1cdcfd870/Screenshot_3.png)
+![demo](https://raw.githubusercontent.com/ThiagoTorresFerrao/pedra_papel_tesoura_lagarto_spock/86374deed8ba52e97a8ac1addeb988e1cdcfd870/img/demo02.png)
+![demo](https://raw.githubusercontent.com/ThiagoTorresFerrao/pedra_papel_tesoura_lagarto_spock/86374deed8ba52e97a8ac1addeb988e1cdcfd870/img/demo01.jpg)
