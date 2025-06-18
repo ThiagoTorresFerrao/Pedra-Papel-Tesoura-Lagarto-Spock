@@ -18,9 +18,20 @@
             <button class="choice" id="spock"><img src="imgspock.png" alt="Spock"></button>
         </div>
         <div class="result">
+            <div id="choices-display" class="choices-display">
+                <div class="player">
+                    <p>Você escolheu:</p>
+                    <img id="player-choice-img" src="" alt="">
+                </div>
+                <div class="computer">
+                    <p>Computador escolheu:</p>
+                    <img id="computer-choice-img" src="" alt="">
+                </div>
+            </div>
             <p id="result-message"></p>
             <p>Jogador: <span id="player-score">0</span> | Computador: <span id="computer-score">0</span></p>
         </div>
+
     </div>
     <script src="script.js"></script>
 </body>

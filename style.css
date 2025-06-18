@@ -62,5 +62,22 @@ h1 {
     color: #cf2900;
 }
 
+#computer-choice {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.choices-display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+
+.choices-display div {
+    text-align: center;
+}
+
 
 /* Thiago Torres */

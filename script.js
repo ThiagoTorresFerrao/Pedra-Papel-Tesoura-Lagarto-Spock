@@ -42,8 +42,21 @@ function getWinner(player, computer) {
 }
  
 function displayResult(player, computer, winner) {
+    const playerImg = document.getElementById('player-choice-img');
+    const computerImg = document.getElementById('computer-choice-img');
+
+    // Define imagens
+    playerImg.src = `img${player}.png`;
+    playerImg.alt = player;
+    playerImg.style.display = 'inline';
+
+    computerImg.src = `img${computer}.png`;
+    computerImg.alt = computer;
+    computerImg.style.display = 'inline';
+
+    // Mensagem de resultado
     if (winner === 'draw') {
-        resultMessage.textContent = `Empate! Ambos escolheram ${player}`;
+        resultMessage.textContent = `Empate! Ambos escolheram ${capitalize(player)}`;
     } else if (winner === 'player') {
         resultMessage.textContent = `Você ganhou! ${capitalize(player)} ${outcomes[player][computer]} ${computer}`;
     } else {
