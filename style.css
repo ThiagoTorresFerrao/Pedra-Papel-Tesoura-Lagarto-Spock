@@ -9,8 +9,10 @@ body {
 }
 
 .container {
+    max-width: 600px;
     text-align: center;
     background-color: #11bef3;
+    margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -23,18 +25,17 @@ h1 {
 
 .choices {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
     margin: 20px 0;
 }
 
 .choice {
-    background-color: #ffcc00;
-    border: 2px solid #ff0000;
-    border-radius: 10px;
-    margin: 0 10px;
+    background: none;
+    border: none;
     cursor: pointer;
     padding: 10px;
-    transition: transform 0.2s;
 }
 
 .choice:hover {
@@ -42,14 +43,24 @@ h1 {
 }
 
 .choice img {
-    width: 200px;
-    height: 200px;
+    width: 60px;
+    height: 60px;
+    transition: transform 0.2s;
+}
+
+.choice img:hover {
+    transform: scale(1.1);
 }
 
 .result {
     margin-top: 20px;
     font-size: 1.2em;
     color: #000000;
+}
+
+.result p {
+    font-size: 16px;
+    margin: 10px 0;
 }
 
 #result-message {
@@ -73,6 +84,7 @@ h1 {
     align-items: center;
     margin-bottom: 10px;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .choices-display div {
@@ -120,6 +132,34 @@ h1 {
     border-radius: 10px;
 }
 
+@media (max-width: 480px) {
+    .choice img {
+        width: 90px;
+        height: 90px;
+    }
 
+    .result p {
+        font-size: 14px;
+    }
+
+    .choices-display {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 480px) {
+    #player-choice-img,
+    #computer-choice-img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .choice img {
+        width: 100px;
+        height: 100px;
+    }
+}
 
 /* Thiago Torres */
