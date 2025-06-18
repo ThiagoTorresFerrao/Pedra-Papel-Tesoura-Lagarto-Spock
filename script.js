@@ -54,13 +54,26 @@ function displayResult(player, computer, winner) {
     computerImg.alt = computer;
     computerImg.style.display = 'inline';
 
-    // Mensagem de resultado
+    // Reset animações
+    playerImg.className = '';
+    computerImg.className = '';
+
+    // Toca som e aplica animação
     if (winner === 'draw') {
         resultMessage.textContent = `Empate! Ambos escolheram ${capitalize(player)}`;
+        document.getElementById('sound-draw').play();
+        playerImg.classList.add('pulse');
+        computerImg.classList.add('pulse');
     } else if (winner === 'player') {
         resultMessage.textContent = `Você ganhou! ${capitalize(player)} ${outcomes[player][computer]} ${computer}`;
+        document.getElementById('sound-win').play();
+        playerImg.classList.add('win');
+        computerImg.classList.add('lose');
     } else {
         resultMessage.textContent = `Você perdeu! ${capitalize(computer)} ${outcomes[computer][player]} ${player}`;
+        document.getElementById('sound-lose').play();
+        playerImg.classList.add('lose');
+        computerImg.classList.add('win');
     }
 }
 

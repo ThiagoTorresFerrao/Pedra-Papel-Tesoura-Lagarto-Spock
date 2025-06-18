@@ -79,5 +79,47 @@ h1 {
     text-align: center;
 }
 
+/* Animação de vitória */
+@keyframes scaleWin {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Animação de derrota */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Animação de empate */
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.win {
+    animation: scaleWin 0.6s ease-in-out;
+    border: 3px solid green;
+    border-radius: 10px;
+}
+
+.lose {
+    animation: shake 0.6s ease-in-out;
+    border: 3px solid red;
+    border-radius: 10px;
+}
+
+.pulse {
+    animation: pulse 0.6s ease-in-out;
+    border: 3px solid orange;
+    border-radius: 10px;
+}
+
+
 
 /* Thiago Torres */
