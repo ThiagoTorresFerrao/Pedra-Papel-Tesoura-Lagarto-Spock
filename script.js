@@ -90,3 +90,16 @@ function updateScore(winner) {
 function capitalize(word) {
     return word.charAt(0).toUpperCase() + word.slice(1);
 }
+
+const manualBtn = document.getElementById('how-to-play-btn');
+const manual = document.getElementById('manual');
+
+manualBtn.addEventListener('click', () => {
+    if (manual.style.display === 'none') {
+        manual.style.display = 'block';
+        manualBtn.textContent = 'Close Manual';
+    } else {
+        manual.style.display = 'none';
+        manualBtn.textContent = 'How to Play';
+    }
+});
