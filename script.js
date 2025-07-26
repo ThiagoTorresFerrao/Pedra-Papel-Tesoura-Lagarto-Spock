@@ -58,20 +58,37 @@ function displayResult(player, computer, winner) {
     playerImg.className = '';
     computerImg.className = '';
 
-    // Toca som e aplica animação
+    // Toca som e aplica animação de forma que não haja espera, isso é muito importante. :D
     if (winner === 'draw') {
-        resultMessage.textContent = `Empate! Ambos escolheram ${capitalize(player)}`;
-        document.getElementById('sound-draw').play();
-        playerImg.classList.add('pulse');
-        computerImg.classList.add('pulse');
+    resultMessage.textContent = `Empate! Ambos escolheram ${capitalize(player)}`;
+    
+    const somDraw = document.getElementById('sound-draw');
+    somDraw.pause();
+    somDraw.currentTime = 0;
+    somDraw.play();
+    
+    playerImg.classList.add('pulse');
+    computerImg.classList.add('pulse');
+    
     } else if (winner === 'player') {
         resultMessage.textContent = `Você ganhou! ${capitalize(player)} ${outcomes[player][computer]} ${computer}`;
-        document.getElementById('sound-win').play();
+        
+        const somWin = document.getElementById('sound-win');
+        somWin.pause();
+        somWin.currentTime = 0;
+        somWin.play();
+        
         playerImg.classList.add('win');
         computerImg.classList.add('lose');
+        
     } else {
         resultMessage.textContent = `Você perdeu! ${capitalize(computer)} ${outcomes[computer][player]} ${player}`;
-        document.getElementById('sound-lose').play();
+        
+        const somLose = document.getElementById('sound-lose');
+        somLose.pause();
+        somLose.currentTime = 0;
+        somLose.play();
+        
         playerImg.classList.add('lose');
         computerImg.classList.add('win');
     }
