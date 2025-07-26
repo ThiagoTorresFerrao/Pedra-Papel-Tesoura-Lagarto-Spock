@@ -171,3 +171,28 @@ h1 {
         height: 100px;
     }
 }
+
+#how-to-play-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#how-to-play-btn:hover {
+    background-color: #333;
+}
+
+.manual {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #aaa;
+    text-align: center;
+}
