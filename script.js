@@ -92,14 +92,20 @@ function capitalize(word) {
 }
 
 const manualBtn = document.getElementById('how-to-play-btn');
-const manual = document.getElementById('manual');
+const modal = document.getElementById('manual-modal');
+const closeBtn = document.querySelector('.close-btn');
 
 manualBtn.addEventListener('click', () => {
-    if (manual.style.display === 'none') {
-        manual.style.display = 'block';
-        manualBtn.textContent = 'Close Manual';
-    } else {
-        manual.style.display = 'none';
-        manualBtn.textContent = 'How to Play';
+    modal.style.display = 'flex';
+});
+
+closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+// Fecha se clicar fora da modal
+window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
     }
 });

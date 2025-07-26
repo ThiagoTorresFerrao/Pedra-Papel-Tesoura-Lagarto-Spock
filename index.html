@@ -34,12 +34,18 @@
 
     </div>
 
-    <button id="how-to-play-btn">How to Play</button>
+    <!-- Botão centralizado -->
+    <div class="how-to-play-wrapper">
+        <button id="how-to-play-btn">How to Play</button>
+    </div>
 
-        <div id="manual" style="display: none;" class="manual">
+    <!-- Modal -->
+    <div id="manual-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
             <h2>Game Manual</h2>
             <p>This game is a variation of Rock, Paper, Scissors with two additional choices: Lizard and Spock.</p>
-            <ul style="text-align: left; max-width: 500px; margin: 0 auto;">
+            <ul>
                 <li>Scissors cuts Paper</li>
                 <li>Paper covers Rock</li>
                 <li>Rock crushes Lizard</li>
@@ -51,8 +57,9 @@
                 <li>Spock vaporizes Rock</li>
                 <li>Rock crushes Scissors</li>
             </ul>
-            <img src="img/manual.png" alt="Game Explanation" style="max-width: 100%; margin-top: 10px;">
+            <img src="img/manual.png" alt="Game Explanation">
         </div>
+    </div>
 
     <script src="script.js"></script>
     <audio id="sound-win" src="Sound/win.wav"></audio>
