@@ -47,7 +47,22 @@ As regras de Pedra-papel-tesoura-lagarto-Spock são:
     Spock vaporiza pedra
     Pedra amassa tesoura 
 
-Desenvolvido por Thiago Torres.
+Desenvolvido por/Developed by: Thiago Torres.
+
+## 🧩 Project Structure | Estrutura do Projeto
+
+```text
+/
+├── img/  
+├── sounds/
+├── index.html
+├──style.css
+├── script.js
+└── README.md
+
+```
+
+---
 
 ![demo](img/demo01.jpg)
 
