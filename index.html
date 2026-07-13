@@ -1,69 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/double_tt.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/double_tt.ico" type="image/x-icon" />
     <title>Pedra, Papel, Tesoura, Lagarto, Spock</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>Pedra, Papel, Tesoura, Lagarto, Spock</h1>
-        <div class="choices">
-            <button class="choice" id="pedra"><img src="img/imgpedra.png" alt="Pedra"></button>
-            <button class="choice" id="papel"><img src="img/imgpapel.png" alt="Papel"></button>
-            <button class="choice" id="tesoura"><img src="img/imgtesoura.png" alt="Tesoura"></button>
-            <button class="choice" id="lagarto"><img src="img/imglagarto.png" alt="Lagarto"></button>
-            <button class="choice" id="spock"><img src="img/imgspock.png" alt="Spock"></button>
+      <h1>Pedra, Papel, Tesoura, Lagarto, Spock</h1>
+      <div class="choices">
+        <button class="choice" id="pedra">
+          <img src="img/imgpedra.png" alt="Pedra" />
+        </button>
+        <button class="choice" id="papel">
+          <img src="img/imgpapel.png" alt="Papel" />
+        </button>
+        <button class="choice" id="tesoura">
+          <img src="img/imgtesoura.png" alt="Tesoura" />
+        </button>
+        <button class="choice" id="lagarto">
+          <img src="img/imglagarto.png" alt="Lagarto" />
+        </button>
+        <button class="choice" id="spock">
+          <img src="img/imgspock.png" alt="Spock" />
+        </button>
+      </div>
+      <div class="result">
+        <div id="choices-display" class="choices-display">
+          <div class="player">
+            <p>Você escolheu:</p>
+            <img id="player-choice-img" src="" alt="" />
+          </div>
+          <div class="computer">
+            <p>Computador escolheu:</p>
+            <img id="computer-choice-img" src="" alt="" />
+          </div>
         </div>
-        <div class="result">
-            <div id="choices-display" class="choices-display">
-                <div class="player">
-                    <p>Você escolheu:</p>
-                    <img id="player-choice-img" src="" alt="">
-                </div>
-                <div class="computer">
-                    <p>Computador escolheu:</p>
-                    <img id="computer-choice-img" src="" alt="">
-                </div>
-            </div>
-            <p id="result-message"></p>
-            <p>Jogador: <span id="player-score">0</span> | Computador: <span id="computer-score">0</span></p>
-        </div>
-
+        <p id="result-message"></p>
+        <p>
+          Jogador: <span id="player-score">0</span> | Computador:
+          <span id="computer-score">0</span>
+        </p>
+      </div>
     </div>
 
     <!-- Botão centralizado -->
     <div class="how-to-play-wrapper">
-        <button id="how-to-play-btn">How to Play</button>
+      <button id="how-to-play-btn">How to Play</button>
     </div>
 
     <!-- Modal -->
     <div id="manual-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Game Manual</h2>
-            <p>This game is a variation of Rock, Paper, Scissors with two additional choices: Lizard and Spock.</p>
-            <ul>
-                <li>Scissors cuts Paper</li>
-                <li>Paper covers Rock</li>
-                <li>Rock crushes Lizard</li>
-                <li>Lizard poisons Spock</li>
-                <li>Spock smashes Scissors</li>
-                <li>Scissors decapitates Lizard</li>
-                <li>Lizard eats Paper</li>
-                <li>Paper disproves Spock</li>
-                <li>Spock vaporizes Rock</li>
-                <li>Rock crushes Scissors</li>
-            </ul>
-            <img src="img/manual_PPTLS.png" alt="Game Explanation">
-        </div>
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Game Manual</h2>
+        <p>
+          This game is a variation of Rock, Paper, Scissors with two additional
+          choices: Lizard and Spock.
+        </p>
+        <ul>
+          <li>Scissors cuts Paper</li>
+          <li>Paper covers Rock</li>
+          <li>Rock crushes Lizard</li>
+          <li>Lizard poisons Spock</li>
+          <li>Spock smashes Scissors</li>
+          <li>Scissors decapitates Lizard</li>
+          <li>Lizard eats Paper</li>
+          <li>Paper disproves Spock</li>
+          <li>Spock vaporizes Rock</li>
+          <li>Rock crushes Scissors</li>
+        </ul>
+        <img src="img/manual_PPTLS.png" alt="Game Explanation" />
+      </div>
     </div>
 
     <script src="script.js"></script>
     <audio id="sound-win" src="Sound/win.wav"></audio>
     <audio id="sound-lose" src="Sound/lose.wav"></audio>
     <audio id="sound-draw" src="Sound/draw.wav"></audio>
-</body>
+  </body>
 </html>
